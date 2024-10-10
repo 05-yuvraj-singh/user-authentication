@@ -10,7 +10,7 @@ app.get('/',(req,res)=>{
     res.status(200).json({success:true , message:'Home route'})
 })
 
-app.get('/test-route',(req,res)=>{
+app.get('/test',(req,res)=>{
     res.status(200).json({success:true , message:'testing route works fine'})
 })
 app.listen(port , ()=>{
