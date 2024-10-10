@@ -1,6 +1,10 @@
 const express = require('express')
-const port = 9090
+const cors = require('cors')
+
+const port = process.env.PORT ||9090
 const app = express()
+
+app.use(cors())
 
 app.get('/',(req,res)=>{
     res.status(200).json({success:true , message:'Home route'})
